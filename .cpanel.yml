@@ -4,3 +4,7 @@ deployment:
     - export DEPLOYPATH=/home4/mesudgiz/versiontest.mesudcengiz.com/
     - /bin/cp -R Master $DEPLOYPATH
     - /bin/cp default.html $DEPLOYPATH
+    - /bin/cp projects.html $DEPLOYPATH
+    - /bin/cp contact.html $DEPLOYPATH
+    - /bin/cp aboutme.html $DEPLOYPATH
+    - /bin/cp README.md $DEPLOYPATH
