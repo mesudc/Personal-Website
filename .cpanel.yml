@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home4/mesudgiz/public_html/
+    - export DEPLOYPATH=/home4/mesudgiz/versiontest.mesudcengiz.com/
     - /bin/cp -R Master $DEPLOYPATH
     - /bin/cp default.html $DEPLOYPATH
