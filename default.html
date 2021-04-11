@@ -16,13 +16,15 @@
   <!--CSS-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="Master/css/main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Martel:wght@300&display=swap" rel="stylesheet">
   
 </head>
 
 <body>
   <!-- Start Nav bar-->
   <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-    <a class="navbar-brand text-danger mx-auto" href="default.html">Mesud Erkam Cengiz</a>
+    <a class="navbar-brand text-danger mx-auto" href="/">Mesud Erkam Cengiz</a>
   </nav>
   <!--End Nav Bar-->
 
@@ -35,24 +37,25 @@
 
         <!--Photo and Description-->
         <img src="Master/images/photo2.jpg" alt="Photo of me" id="personal_photo">
-        <p>placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder</p>
+        <hr>
+        <p>It is great to have you here, please explore the sections below to know more about me! </p>
         <!--End Photo and Description-->
 
         <!--List Group Wrapper-->
         <div class="link-wrapper">
-
+          <hr class="sep">
           <div class="list-group list-group-root btn-group">
 
             <!--About Me-->
-            <button type="button" class="list-group-item bg-light text-danger btn btn-info" id="btn1" data-target="About-Me">About Me</button>
+            <button type="button" class="list-group-item bg-light text-danger btn btn-info" id="btn1" data-target="About-Me">About</button>
             <!--End About Me-->
 
             <!--Projects Collapse Group-->
             <a href="#Projects" class="list-group-item bg-light text-danger" data-toggle="collapse">Projects</a>
             <div class="list-group collapse bg-light" id="Projects">
-              <button type="button" class="list-group-item bg-light text-danger btn btn-info" id="btn2" data-target="Project1">Project 1</button>
-              <button type="button" class="list-group-item bg-light text-danger btn btn-info" id="btn3" data-target="Project2">Project 2</a>
-              <button type="button" class="list-group-item bg-light text-danger btn btn-info" id="btn4" data-target="Project3">Project 3</a>
+              <button type="button" class="list-group-item bg-light text-danger btn btn-info" id="btn2" data-target="Project1">COVID DATA CHART</button>
+              <button type="button" class="list-group-item bg-light text-danger btn btn-info" id="btn3" data-target="Project2">WEATHER APP</button>
+              <button type="button" class="list-group-item bg-light text-danger btn btn-info" id="btn4" data-target="Project3">THIS WEBSITE!</button>
             </div>
             <!--End Projects Collapse Group-->
 
@@ -66,21 +69,26 @@
       <!--End photo and links-->
 
       <!--Page information-->
-      <div class="col-sm-8" id="content">
-        <div id="About-Me">
-          <p>About me</p>
+      <div class="col-sm-8 pt-4" id="content">
+        <div id="About-Me" class="shadow-sm">
+          <h1>About Me</h1>
+          <hr class="sep">
         </div>
-        <div id="Project1">
-          Test2
+        <div id="Project1" class="shadow-sm"> 
+          <h1>Charting Covid Data</h1>
+          <hr class="sep">
         </div>
-        <div id="Project2">
-          Test3
+        <div id="Project2" class="shadow-sm">
+          <h1>Real time Weather Data</h1>
+          <hr class="sep">
         </div>
-        <div id="Project3">
-          Test4
+        <div id="Project3" class="shadow-sm">
+          <h1>Hosting Personal Portfolio Website</h1>
+          <hr class="sep">  
         </div>
-        <div id="Contact">
-          Test5
+        <div id="Contact" class="shadow-sm mx-auto justify-content-center">
+          <h1>Contact Me</h1>
+          <hr class="sep">
         </div>
       </div>
       <!--End page information-->
