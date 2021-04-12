@@ -29,7 +29,7 @@
   <!--End Nav Bar-->
 
   <!--Main Container-->
-  <div class="container shadow-lg bg-light" id="page-content">
+  <div class="container shadow-lg bg-light pt-5" id="page-content">
     <div class="row text-center">
 
       <!--Photo and Links-->
@@ -47,7 +47,7 @@
           <div class="list-group list-group-root btn-group">
 
             <!--About Me-->
-            <button type="button" class="list-group-item bg-light text-danger btn btn-info" id="btn1" data-target="About-Me">About</button>
+            <button type="button" class="list-group-item bg-light text-danger btn btn-info" id="btn1" data-target="About-Me" style="font-size: 20px">About</button>
             <!--End About Me-->
 
             <!--Projects Collapse Group-->
@@ -60,7 +60,7 @@
             <!--End Projects Collapse Group-->
 
             <!--Contact Link-->
-            <button type="button" class="list-group-item bg-light text-danger btn btn-info" id="btn5" data-target="Contact">Contact</button>
+            <button type="button" class="list-group-item bg-light text-danger btn btn-info" id="btn5" data-target="Contact" style="font-size: 20px;">Contact</button>
             <!--End Contact-->
           </div>
           <!--End Link Wrapper-->
@@ -70,26 +70,166 @@
 
       <!--Page information-->
       <div class="col-sm-8 pt-4" id="content">
+
+        <!-- About Me Info-->
         <div id="About-Me" class="shadow-sm">
           <h1>About Me</h1>
           <hr class="sep">
+          <p>Hello, my name is Mesud Erkam Cengiz. I currently work as a Technical Support and have worked as a Cell Phone repair technician. I hope to work my way to becoming a Software Developer.</p>
+          <hr class="sep">
+
+          <!-- About Me -> Values -->
+          <h3>Values</h3>
+          <hr class="sep-light">
+          <p><strong>HARD WORK</strong> I have a hard-working personality. If there is a task at hand or a job to do. I will try my hardest at being the <i>best</i> I can be at what I do. 
+          </p>
+          <p><strong>STUDENT</strong> I like to explore avenues I have not tread before in hopes to become more than who I am today. There is always more that can be done, and more to be learned.</p>
+          <p><strong>TEAMWORK</strong> You may be the smartest man alive, but a rocket that took humanity to the moon is not made by one man.</p>
+          <hr class="sep-light">
+          <!--End About Me -> Values -->
+          
+          <!-- About Me -> Work Experience -->
+          <h3>Work Experience</h3>
+          <hr class="sep-light">
+          <h5><i>Secure-24, </i>Technical Support</h5>
+          <h6>August 2019 - Present</h6>
+          <p>I currently work as a Technical Support Represantitive. Responding to technical needs of our clients requires crucial problem solving and troubleshooting abilities.
+            Working as Technical Support has given me the opportunity to explore and understand countless cutting-edge technologies.  
+          </p>
+          <hr class="sep-light">
+          <h5><i>ITSALLLEGGINGS, </i>Sales Associate</h5>
+          <h6>March 2019 - August 2019</h6>
+          <p>Working as a Sales Represantitive has helped serving as a building block to work with team members and providing excellent customer service.
+             Providing the service I would like to receive has been a core lesson from working as Sales Associate.</p>
+          <hr class="sep-light">
+          <h5><i>The FIX, </i>Electronics Repair Technician</h5>
+          <h6>September 2017 - March 2018</h6>
+          <p>Working as a electronics repair technician is not only a delicate work but comes with a lot of pressure.
+             It has provided me with an excellent skillsets, such as working under pressure, accurate deduction and troubleshooting skills.</p>
+          <hr class="sep-light">
+          <!--End About Me -> Work Experience -->
+
+          <!-- About me -> Education -->
+          <h3>Education</h3>
+          <hr class="sep-light">
+          <p>I am currently a student at Oakland Community College with a GPA of 3.8 and a member of <i>Phi Theta Kappa Honors Society</i>. I have mainly taken Mathematics and Computer Science classes. My overall knowledge in programming is, however, self-taught.
+            Technology is ever-evolving, and we can never stop educating ourselves if we hope to stay relevant. 
+          </p>
+          <hr class="sep-light">
+          <!--End About -> Education -->
+
+          <!--About me -> Skills -->
+          <h3>Skills</h3>
+          <hr class="sep-light">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Skillset</th>
+                <th scope="col">Proficiency</th>
+              </tr>
+            </thead>
+              <tbody>
+                <tr><td>Troubleshooting</td><td>10</td></tr>
+                <tr><td>Problem Solving</td><td>10</td></tr>
+                <tr><td>User Administration</td><td>9</td></tr>
+                <tr><td>Mathematics</td><td>9</td></tr>
+                <tr><td>Java</th><td>9</td></tr>
+                <tr><td>HTML/CSS/BootStrap</td><td>9</td></tr>
+                <tr><td>JavaScript</td><td>8</td></tr>
+                <tr><td>Python</td><td>8</td></tr>
+                <tr><td>Flask Framework</td><td>7</td></tr>
+                <tr><td>Microsoft Exchange</td><td>7</td></tr>
+                <tr><td>C#</td><td>6</td></tr>                
+              </tbody>
+            
+          </table>
+          <!--End About -> Skills -->
+
         </div>
+        <!--End About Me Info-->
+
+        <!--Covid WEB APP Project Info-->
         <div id="Project1" class="shadow-sm"> 
-          <h1>Charting Covid Data</h1>
+          <h1 class="pt-5">Charting Covid Data</h1>
           <hr class="sep">
+          <h3>The App</h3>
+          <hr class="sep-light">
+          <p>Created a web application using Flask Framework and an API to gather real-time data of active and total cases of Covid per Country. As well as total deaths and total recoveries.</p>
+          <img src="/Master/images/CovidDataAPP.png" alt="Screenshot of Covid Real Time Data Application" class="img-fluid">
+          <h3>Challenges</h3>
+          <hr class="sep-light">
+          <p>The main challenge of this application was to dynamically create the chart based on the country selected. As in order to do that, we need to gather user input and validate if the country matches the list of countries the API used provides.</p>
+          <p>Once the searching is completed and the data of the requested country is received. We would have to extract the data provided by the API meaningfully and use the data provided to generate a chart.</p>
+          <hr class="sep-light">
+          <h3>Future Improvements</h3>
+          <hr class="sep-light">
+          <p>I am currently working on adding an SQLAlchemy database to store all of the data received from the API which will allow me to extract the data directly from a database.
+            This will help to achieve creating a chart where more than one country's data can be viewed by adding multiple datasets to the chart.
+          </p>
+          <p>Create a search system to provide suggestions, essentially providing an auto-complete system for users to find the country easier.</p>
+          <hr class="sep-light">
+          <p><small>View the source code <a href="https://github.com/mesudc/CovidDataWebApp">here</a></small></p>
         </div>
+        <!--End Covid WEB APP Project Info-->
+
+        <!--Weather API Project Info-->
         <div id="Project2" class="shadow-sm">
-          <h1>Real time Weather Data</h1>
+          <h1 class="pt-5">Real time Weather Data</h1>
           <hr class="sep">
+          <h3>The App</h3>
+          <hr class="sep-light">
+          <p>Created a Weather App which receivs user input with City, State(Optional), and Country. Once the user input is received, the application provides real-time weather data of the location.</p>
+          <img src="/Master/images/WeatherApp.png" alt="Screenshot of Weather Application providing real time weather data" class="img-fluid">
+          <h3>Challenges</h3>
+          <hr class="sep-light">
+          <p>The main challange of this application was to request appropriate data. Unlike the Covid Data Application, the API provides the data based on your request.
+            Once the data is received, used the flask framework to provide separate location data based on whether the optional input of State was provided.
+          </p>
+          <hr class="sep-light">
+          <h3>Future Improvements</h3>
+          <p>I will be adding error handling when the city is not found. Additionally, will be adding feature to automatically gather user location to provide real time weather data.</p>
+          <p>I will additionally create a database to handle weather data requests. Weather data is only updated every 10-15 minutes. Why should we not provide the existing data rather than creating the same request.</p>
+          <hr class="sep-light">
+          <p><small>View the source code <a href="https://github.com/mesudc/WeatherApp">here</a></small></p>
+
         </div>
+        <!--End Weather API Project Info-->
+
+        <!--Personal Portfolio Website Info-->
         <div id="Project3" class="shadow-sm">
-          <h1>Hosting Personal Portfolio Website</h1>
-          <hr class="sep">  
-        </div>
-        <div id="Contact" class="shadow-sm mx-auto justify-content-center">
-          <h1>Contact Me</h1>
+          <h1 class="pt-5">Portfolio Website</h1>
           <hr class="sep">
+          <p>As I have mentioned, I am looking to work my way to becoming a Software Developer. What better way to start than show what you can do!</p>
+          <hr class="sep-light">
+          <h3>Challenges</h3>
+          <hr class="sep-light">
+          <p>Prior to creating any website, you have to work on hosting your website. Once I had my hosting ready, I made sure to use proper frameworks such as BootStrap to make my website responsive for both Desktop and Mobile. </p>
+          <p>Used JQuery framework to create animations to switch page content information without actually ever leaving the page.</p>
+          <p>Created a simplistic layout for my webpage utilizing the tools given to me by BootStrap and CSS</p>
+          <hr class="sep-light">
+          <h3>Future Improvements</h3>
+          <hr class="sep-light">
+          <p>Create a login system to my website for myself to update anyone about my life for anyone who would like to see it.</p>
+          <p>I will be adding a scripts to update and edit page content directly from the website, without needing the source code.</p>
+          <hr class="sep-light">
+          <p><small>View the source code <a href="https://github.com/mesudc/Personal-Website">here</a></small></p>
         </div>
+        <!--End Personal Portfolio Website Info-->
+
+        <!--Contact Info-->
+        <div id="Contact" class="shadow-sm mx-auto justify-content-center">
+          <h1 class="pt-5">Contact Me</h1>
+          <hr class="sep">
+          <hr class="sep-light">
+          <p>Primary Email Address: <a href="mailto:contact@mesudcengiz.com">contact@mesudcengiz.com</a></p>
+          <p>Secondary Email Addres: <a href="mailto:mesuderkam@outlook.com">mesuderkam@outlook.com</a></p>
+          <hr class="sep-light">
+          <p>Primary Phone : (248) 890-2835</p>
+          <p>Secondary Phone: (248) 890-8138</p>
+          <hr class="sep-light">
+          <p>Github Link: <a href="https://github.com/mesudc">https://github.com/mesudc</a></p>
+        </div>
+        <!--End Contact Info-->
       </div>
       <!--End page information-->
     </div>
